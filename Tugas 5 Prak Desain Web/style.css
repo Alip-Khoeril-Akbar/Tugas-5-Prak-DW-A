@@ -1,0 +1,159 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fc;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#session-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+  padding: 10px;
+  background-color: #e8f0fe;
+  border-radius: 8px;
+}
+
+#salamPengguna {
+  margin-top: 10px; 
+  color: #2d98da; 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+#session-container input {
+  margin-right: 10px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#session-container button {
+  background-color: #2d98da;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#session-container button:hover {
+  background-color: #2186c4;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+input {
+  margin: 10px 0;
+  padding: 12px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#daftar-buku, #buku-favorit {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.buku {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.buku:last-child {
+  border-bottom: none;
+}
+
+.buku p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.buku button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.buku button:hover {
+  background-color: #c0392b;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#daftar-buku, #buku-favorit {
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  #session-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #session-container input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #session-container button {
+    width: 100%;
+  }
+}
